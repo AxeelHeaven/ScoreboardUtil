@@ -113,56 +113,8 @@ public class ScoreboardUtil {
             slots--;
         }
     }
-
+    
     private String getEntry(Integer value) {
-        if (value == 0) {
-            return ChatColor.BLACK.toString();
-        }
-        if (value == 1) {
-            return ChatColor.DARK_BLUE.toString();
-        }
-        if (value == 2) {
-            return ChatColor.DARK_GREEN.toString();
-        }
-        if (value == 3) {
-            return ChatColor.DARK_AQUA.toString();
-        }
-        if (value == 4) {
-            return ChatColor.DARK_RED.toString();
-        }
-        if (value == 5) {
-            return ChatColor.DARK_PURPLE.toString();
-        }
-        if (value == 6) {
-            return ChatColor.GOLD.toString();
-        }
-        if (value == 7) {
-            return ChatColor.GRAY.toString();
-        }
-        if (value == 8) {
-            return ChatColor.DARK_GRAY.toString();
-        }
-        if (value == 9) {
-            return ChatColor.BLUE.toString();
-        }
-        if (value == 10) {
-            return ChatColor.GREEN.toString();
-        }
-        if (value == 11) {
-            return ChatColor.AQUA.toString();
-        }
-        if (value == 12) {
-            return ChatColor.RED.toString();
-        }
-        if (value == 13) {
-            return ChatColor.LIGHT_PURPLE.toString();
-        }
-        if (value == 14) {
-            return ChatColor.YELLOW.toString();
-        }
-        if (value == 15) {
-            return ChatColor.WHITE.toString();
-        }
-        return "";
+        return ChatColor.values()[value].toString();
     }
 }
